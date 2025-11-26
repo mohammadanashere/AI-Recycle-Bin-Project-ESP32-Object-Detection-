@@ -33,4 +33,48 @@ This project is inspired by the Hackster "AI Audio Classifier Bin" but upgraded 
 
 ---
 
-## 📦 Project Structure
+---
+
+## How It Works
+1. Object is placed in front of the ESP32-CAM  
+2. Camera captures image  
+3. TFLite model classifies object type  
+4. Based on the prediction:
+   - Servo moves to Paper bin  
+   - Servo moves to Plastic bin  
+   - Servo moves to Metal bin  
+5. Classification result printed via Serial Monitor  
+
+---
+
+## Model Training
+- Dataset of Paper, Plastic, and Metal objects trained using Edge Impulse
+- Model exported as **TensorFlow Lite**  
+- Converted for ESP32-CAM inference  
+
+---
+
+## Future Improvements
+- Add more classes (Glass, Organic, E-waste)  
+- Add OLED/LCD display  
+- Add WiFi-based logging  
+- Add auto-lid and safety features  
+
+---
+
+## Project Status
+- ✔ Model trained  
+- ✔ Classification working on ESP32-CAM  
+- ⏳ Motor hardware & logic in progress  
+
+---
+
+## Author
+**Mohammad Anas**  
+Diploma in Artificial Intelligence & Machine Learning  
+(2025)
+
+---
+
+## License
+This project is open-source. Feel free to use, modify, and improve it.
